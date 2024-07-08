@@ -1,0 +1,13 @@
+tensorflow == 2.15.0
+nltk == 3.8.1
+contractions
+streamlit
+pandas
+numpy
+matplotlib
+Pillow
+plotly
+scikit-learn
+seaborn
+wordcloud
+regex

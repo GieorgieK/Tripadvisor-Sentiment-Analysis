@@ -1,0 +1,2 @@
+Data = https://www.kaggle.com/datasets/andrewmvd/trip-advisor-hotel-reviews/data
+Deployment = https://huggingface.co/spaces/Gieorgie/Tripadvisior_Sentiment_Analysis
