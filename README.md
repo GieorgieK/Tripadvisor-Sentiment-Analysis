@@ -12,6 +12,15 @@ The primary objective of this project is to develop a model that can automatical
 
 This project aims to perform data processing and preparation using Natural Language Processing (NLP) techniques, implement an Artificial Neural Network (ANN) to classify the sentiment of these reviews, and measure and explain the performance of the ANN model based on evaluation metrics such as accuracy and AUC. Thus, the developed model is expected to make a significant contribution to improving user management and experience in the hospitality industry.
 
+## Tools
+[<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />](https://pandas.pydata.org/)
+[<img src="https://img.shields.io/badge/Seaborn-388E3C?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn" />](https://seaborn.pydata.org/)
+[<img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="Numpy" />](https://numpy.org/)
+[<img src="https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib" />](https://matplotlib.org/)
+[<img src="https://img.shields.io/badge/Scikit%20learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn" />](https://scikit-learn.org/)
+[<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />](https://www.tensorflow.org/)
+[<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras" />](https://keras.io/)
+
 ## Model Building
 
 LSTM (Long Short-Term Memory) was chosen because of its ability to handle long text data and overcome the vanishing gradient problem that often occurs in conventional RNNs (Recurrent Neural Networks). LSTM allows the model to remember long-term information, which is useful in analyzing sequential data like text.
@@ -31,8 +40,6 @@ Positive reviews highlight customer satisfaction with hotel services and facilit
 The model improvement has good performance with an accuracy of around 97.39% and an AUC of 99.60% on training data. However, performance on validation data shows a decrease, indicating possible overfitting or further adjustments needed for model generalization.
 
 It appears that the Positive class (rating 5) dominates with 44.2% of the total data, while the Neutral class (rating 3) is the least with only 328 samples (10.7%). This indicates a significant imbalance in the data distribution, where minority classes like Neutral may have less significant influence in model learning.
-
-From the confusion matrix, it can be seen that the model tends to be better at classifying reviews as Positive (classification with high precision and recall), but faces challenges in distinguishing between Negative and Neutral classes. The model tends to mispredict the Neutral class as Positive more often than vice versa, indicating a need for improvement in detecting neutral sentiment.
 
 To improve model performance, strategies such as handling class imbalance (oversampling or undersampling), further hyperparameter tuning (e.g., dropout rate, learning rate), and exploring more complex models to capture subtler patterns in reviews can be considered.
 
